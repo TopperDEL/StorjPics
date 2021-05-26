@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProjectGuid>18976999-6f1c-4c1f-9dc7-d50b227b2410</ProjectGuid>
+    <ProjectGuid>{18976999-6F1C-4C1F-9DC7-D50B227B2410}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>StorjPics</RootNamespace>
@@ -149,10 +149,16 @@
       <Visible>false</Visible>
     </ImageAsset>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Media" Visible="false" />
-    <Folder Include="Media\AppIcons" Visible="false" />
-    <Folder Include="Media\LaunchImages" Visible="false" />
+    <ProjectReference Include="..\..\StorjPics.Contracts\StorjPics.Contracts.csproj">
+      <Project>{f03beb4b-ca7f-45de-bb79-12f74c95267c}</Project>
+      <Name>StorjPics.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StorjPics.Services\StorjPics.Services.csproj">
+      <Project>{f1b20012-b120-4db5-a9a6-7bca1ad2682a}</Project>
+      <Name>StorjPics.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\StorjPics.Shared\StorjPics.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

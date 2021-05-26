@@ -19,7 +19,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>7d364b31-1304-451f-add2-ac358168299b</ProjectGuid>
+    <ProjectGuid>{7D364B31-1304-451F-ADD2-AC358168299B}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StorjPics</RootNamespace>
@@ -128,6 +128,14 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <ProjectReference Include="..\..\StorjPics.Contracts\StorjPics.Contracts.csproj">
+      <Project>{f03beb4b-ca7f-45de-bb79-12f74c95267c}</Project>
+      <Name>StorjPics.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StorjPics.Services\StorjPics.Services.csproj">
+      <Project>{f1b20012-b120-4db5-a9a6-7bca1ad2682a}</Project>
+      <Name>StorjPics.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

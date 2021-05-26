@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>df00eb8e-c5df-4799-bf6c-b315cde86d8b</ProjectGuid>
+    <ProjectGuid>{DF00EB8E-C5DF-4799-BF6C-B315CDE86D8B}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -87,6 +87,16 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\StorjPics.Contracts\StorjPics.Contracts.csproj">
+      <Project>{f03beb4b-ca7f-45de-bb79-12f74c95267c}</Project>
+      <Name>StorjPics.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StorjPics.Services\StorjPics.Services.csproj">
+      <Project>{f1b20012-b120-4db5-a9a6-7bca1ad2682a}</Project>
+      <Name>StorjPics.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\StorjPics.Shared\StorjPics.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
