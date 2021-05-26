@@ -19,7 +19,7 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
-    restoreSolution: '**/*Droid.csproj'
+    restoreSolution: '**/*Droid.sln'
     feedsToUse: 'select'
 
 - task: android-manifest-package-name@1
