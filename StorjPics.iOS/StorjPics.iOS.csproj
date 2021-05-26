@@ -151,11 +151,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\StorjPics.Contracts\StorjPics.Contracts.csproj">
+    <ProjectReference Include="..\StorjPics.Contracts\StorjPics.Contracts.csproj">
       <Project>{f03beb4b-ca7f-45de-bb79-12f74c95267c}</Project>
       <Name>StorjPics.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\StorjPics.Services\StorjPics.Services.csproj">
+    <ProjectReference Include="..\StorjPics.Services\StorjPics.Services.csproj">
       <Project>{f1b20012-b120-4db5-a9a6-7bca1ad2682a}</Project>
       <Name>StorjPics.Services</Name>
     </ProjectReference>
